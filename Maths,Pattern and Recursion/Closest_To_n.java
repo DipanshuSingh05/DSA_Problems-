@@ -20,13 +20,13 @@ public class Closest_To_n {
         int q = n/m;
         int n1= m * q;
         int n2 = (n*m) > 0 ?(m *(q + 1)) : (m * (q - 1));
-        if((n - n1) < (n + n2))
+        if((n - n1) < (n2-n))
             return n1;
         return n2;
 
     }
     public static void main(String[] args) {
-        int n = 17, m = 4;
+        int n = 15, m = 4;
         System.out.println(fclosest(n, m));
         System.out.println(fclosest_1(n, m));
     }
